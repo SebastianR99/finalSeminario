@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MorningStar Tech Shop es un tienda de venta de productos tecnologicos"
+    />
+    <title>MorningStar Tech Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./css/Styles.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos_contacto.css">
+  </head>
+<body>
+  <header>
+    <div class="fuente">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light contenedor-centrado">    
+        <a href="./index.html">
+          <img class="quitar"
+            src="./img/logo.png"
+            alt="Logotipo de MorningStar Tech Shop"
+          />
+        </a> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./registro.html">Registrate</a>
+            </li>
+
+          </ul>
+          <form class="form-inline my-18 my-lg-18">
+            <input class="form-control mr-sm-18" type="search" placeholder="Buscar" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="contenedor contenedor-centrado pspsps">
+    <div class="titulo-contacto" >
+      <a href="#formulario">
+        <h1 style="color: aliceblue;" class="fw-300 texto-centrado">Contacto</h1>
+      </a>
+    </div>
+      <main class="contenedor-centrado seccion contenido-centrado">
+      <div style="color:cyan" class="form">
+        <form action="guardar.php" method="POST">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" placeholder="nombre completo" required>
+          <label for="correo">Correo electronico</label>
+          <input type="email" name="correo" placeholder="example@algo.com" required>
+          <label for="mensaje">Su Mensaje</label>
+          <textarea name="mensaje" placeholder="mensaje" required></textarea>
+          <input class="boton1 boton-amarillo" type="submit" value="Enviar">
+        </form>
+      </div>
+    </main>
+    </div>
+ 
+  <footer class="seccion copyright" style="background-color: slategray;" >
+    <div class="contenedor-centrado contenedor-footer">
+       <nav class="navegacion">
+         <a href="./index.html">Inicio</a>
+         <a href="./categorias.html">Categorias</a>
+         <a href="./contacto.html">Contacto</a>
+         <a href="./registro.html">Registrate</a>
+       </nav>
+       <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
+    </div>
+   </footer>
+</body>
+</html>

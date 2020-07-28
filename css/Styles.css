@@ -1,0 +1,589 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+ 
+h1{
+  font-size: 3.8rem;
+}
+
+h2{
+  font-size: 3.4rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+h4{
+  font-size: 2.6rem;
+}
+
+/*Modificado por Sebas*/
+img{
+  -webkit-transform: scale(1,1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1,1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
+  max-width: 100%;
+}
+/*Modificado por Sebas*/
+img:hover{
+  -webkit-transform: scale(1.3,1.3);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 100ms;
+  -moz-transform: scale(1.3,1.3);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 100ms;
+  max-width: 100%;
+}
+
+figcaption{
+  font-style: italic;
+  text-align: right;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+label{
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+textarea{
+  height: 20rem;
+}
+
+legend{
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 2.3rem;
+}
+
+.fw-300{
+  font-weight: 300;
+}
+
+.fw-500{
+  font-weight: 1000;
+}
+
+.fuente{
+  font-family: 'Permanent Marker', cursive;
+}
+
+.f-lista{
+  font-family: 'Architects Daughter', cursive;
+  font-family: 'Caveat', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Piedra', cursive;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.texto-centrado{
+  text-align: center;
+}
+
+.display-block{
+  display: block !important;
+}
+.boton1{
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 1rem;
+  border: 0;
+}
+
+
+.boton-amarillo{
+  background-color: #33ecff ;
+  text-decoration: none;
+  color: black;
+}
+
+.boton-amarillo:hover{
+  /* que cambie al momneto que este por enciam su brackround color  */
+  /* efecto de manito apuntando */
+  background-color: seagreen;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.boton-rojo{
+  background-color: lightcoral;
+  margin-left: 15rem;
+  font-family: 'Caveat', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Piedra', cursive;
+}
+
+.boton-azul{
+  background-color: lightseagreen;
+  margin-left: 14rem;
+  font-family: 'Caveat', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Piedra', cursive;
+}
+
+.boton-morado{
+  background-color: mediumslateblue;
+  margin-left: 15rem;
+  font-family: 'Caveat', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Piedra', cursive;
+}
+
+.boton-gris{
+  background-color: lightslategrey;
+  margin-left: 13rem;
+  font-family: 'Caveat', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Piedra', cursive;
+}
+
+.cover{
+  background-color: #333333;
+  padding: 0;
+}
+.cover.inicio{
+  /* background-color: #666873; */
+  background-color: #666873;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center center;
+  min-height: 40rem;
+  height: 100vh; /*vh hace referencia a la pantalla que se mira*/
+
+}
+
+.contenedor-centrado{
+  max-width: 120rem;
+  /* parte top=0, right=auto, botton=0, left=auto; */
+  margin: 0 auto;
+  /* color: white;
+  font-size: 3rem; */
+}
+
+.seccion{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.iconos-nosotros{
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconos{
+  flex-basis: calc(33.3% - 1rem);
+  text-align: center;
+  line-height: 2;
+}
+
+.iconos h3{
+  text-transform: uppercase;
+}
+.separacion-nav-h1{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.separacion-nav-h1 h1{
+  color: white;
+  font-size: 5rem;
+   max-width: 50rem; /*reduce el ancho */
+  /* line-height: 2; hace un interlineado */
+}
+
+.fuente-nav-h1{
+  font-family: 'Permanent Marker', 'Times New Roman', cursive;
+}
+.logo-barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.navegacion a{
+  color: #C0C0C0;
+  text-decoration: none;
+  /* unidades alternativas:
+  -%
+  -em  tamaño de letra estandar 16px 1 em =30 px
+  -rem :Root em -->  <html> 1 rem=16px */
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+/* Solamente afecta al ultimo elemento de navegacion con un pseudo selector */
+.navegacion a:last-of-type{
+  margin-right: 0px;
+}
+/* cuando el raton esta sobre: */
+.navegacion a:hover{
+  color: lightseagreen;
+}
+
+.contenedor-anuncios{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* para que haga salto de linea en las imagenes */
+}
+
+.anuncio{
+  flex-shrink: 0;
+  /* esto sirve para que no se hagan mas chiquitas */
+  flex-grow: 0;
+  flex-basis: calc(33.3% - 1rem); 
+  /* flex: 0 0 calc(33.3% - 1rem; */
+  line-height: 2;
+  border-width: 0.01rem;
+  border-style: solid;
+  border-color: #b5b5b5; 
+  text-align: center;
+  background-color: #f5f5f5;
+  margin-top: 2rem;
+}
+
+.anuncio img{
+  width: 30rem; 
+  height: 25rem;
+  object-fit: cover; 
+  border: 0.3rem solid #ff9daa;
+}
+
+.contenido-anuncio{
+  padding: 2rem;
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.precio{
+  color: crimson;
+  font-weight: 900;
+}
+
+.precio del{
+  color: black;
+  font-weight: 650;
+}
+
+.ver-mas{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagen-fidelizacion{
+  background-image: url(../img/principal.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+.imagen-lonuevo{
+  background-image: url(../img/nuevo.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+.contenido-contacto{
+  color: white;
+  flex: 1;
+}
+
+.contenido-contacto p{
+  font-size: 2.5rem;
+}
+
+.seccion-inferior{
+  display: flex;
+  justify-content: space-between;
+}
+
+.seccion-blog{
+  flex-basis: 60%;
+}
+
+.seccion-testimoniales{
+  flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type{
+  margin-bottom: 0;
+}
+
+.imagen-blog{
+  flex-basis: 40%;
+}
+
+.texto-entrada{
+  flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada h4{
+  margin: 0;
+  line-height: 1.2;
+}
+
+.texto-entrada h4::after{
+  content: "";
+  display: block;
+  width: 15rem;
+  height: 0.5rem;
+  background-color: #71b100;
+  margin-top: 1rem;
+}
+
+.texto-entrada a{
+  text-decoration: none;
+  color: black;
+}
+
+.texto-entrada em{
+  color: #e08709;
+}
+
+.testimonio{
+  background-color: #71b100;
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: white;
+  border-radius: 2rem;
+  /* border-top-left-radius: 10%; suavisa solo la esquina superior izquierda */
+}
+
+.testimonio blockquote + p{
+  text-align: right;
+}
+
+.testimonio blockquote::before{
+  content: "";
+  background-image: url(../img/comilla.svg);
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: -2rem;
+}
+
+.testimonio blockquote{
+  position: relative;
+  padding-left: 5rem;
+}
+
+.seccion-footer{
+  background-color: #333333;
+  margin: 0;
+}
+
+.contenedor-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.copyright{
+  margin: 0;
+  color: white;
+}
+
+.contenido-nosotros{
+  display: grid;
+  
+  grid-template-columns: 50% 50%;
+  /* grid-template-columns: repeat(2, 50%);  tambien se puede o en vez de % 1fr significa fraccion*/
+
+  column-gap: 2rem;
+}
+.texto-nosotros blockquote{
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.imagen{
+  width: 80%;
+  height: 80%;
+}
+
+.imagen-principal{
+  background-image: url(../img/destacado_1.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 30rem; 
+  height: 25rem;
+  display: flex;
+  margin: auto;
+  border: 2rem  solid black;
+}
+
+.imagen2{
+  background-image: url(../img/destacado_2.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 30rem; 
+  height: 25rem;
+  display: flex;
+  margin: auto;
+  border: 2rem  solid black;
+}
+
+.imagen3{
+  background-image: url(../img/destacado_3.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 30rem; 
+  height: 25rem;
+  display: flex;
+  margin: auto;
+  border: 2rem  solid black;
+}
+
+.titulo-contacto a{
+  text-decoration: none;
+  color: #333333;
+}
+
+.titulo-contacto h1{
+  font-weight: 400;
+}
+
+.contenido-centrado{
+  max-width: 80rem;
+}
+
+input:not([type="submit"]):not([type="checkbox"]),
+select, textarea{
+  padding: 1rem;
+  width: 100%;
+  background-color:  #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+/* para modificar la apariencia del formulario */
+.formato-documento{
+  display: flex;
+  align-items: center;
+}
+
+.formato-documento label{
+  margin: 0 0.5rem 2rem 0;
+}
+
+.formato-documento label:last-of-type{
+  margin-left: 0.5rem
+}
+
+.formato-documento input,
+.formato-documento select{
+  /* se ajusta a la pantalla */
+  flex-grow: 1;
+}
+
+.formato-ofertas label{
+  display: inline;
+}
+.destacado-main{
+  font-family: 'Acme', sans-serif;
+  font-weight: 1000;
+}
+
+/*
+=================================================================
+=================DESDE AQUÍ EMPIEZA LO MÍO=======================
+================================================================= 
+*/
+
+.quitar:hover{
+  -webkit-transform: scale(1,1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1,1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
+  max-width: 100%;
+}
+
+.quitar-decoracion:hover{
+  text-decoration: none;
+}
+
+.poner:hover{
+  -webkit-transform: scale(1.3,1.3);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 100ms;
+  -moz-transform: scale(1.3,1.3);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 100ms;
+}
+
+.seccion-categoria{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.seccion-categoria:first-of-type{
+  margin-bottom: 2rem;
+}
+
+.seccion-categoria:last-of-type{
+  margin-top: 2rem;
+}
+
+.imagenes-categoria{
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+.container-producto{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+
+.fuente-productos{
+  font-family: 'EB Garamond', serif;
+}
