@@ -4,7 +4,7 @@
             <div class="top-bar">
                 <div class="container-fluid">
                     <div class="row">
-                        <img src="https://i.imgur.com/oTfsJOl.png">
+                        <img style="max-width: 10px; max-height: 8px;" src="https://i.imgur.com/oTfsJOl.png">
                         <div class="col-lg-3">
                             <div class="logo">
                                     <h1> Proyecto REIC Online</h1>
